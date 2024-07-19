@@ -1,0 +1,23 @@
+.element-enter {
+    margin-right: -100%;
+    transform: translateX(-100%);
+}
+
+.element-enter-active {
+    margin-right: 0;
+    transform: translateX(0);
+    transition: transform 500ms ease-in-out, margin-right 500ms ease-in-out;
+}
+
+.element-exit {
+    transform: translateX(0);
+}
+
+.element-exit-active {
+    transform: translateX(100%);
+    transition: transform 500ms ease-in-out;
+}
+
+.element {
+    transition: transform 500ms ease-in-out, margin 500ms ease-in-out;
+}
